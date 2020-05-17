@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hello This</title>
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  <script>
+      var maths=[];  
+
+      function clearData(){
+        document.getElementById("message").innerHTML="";
+
+      }
+      function compute(){
+          //int x=12
+          //String str="owowowo";
+          var num1=document.getElementById("num1").value;
+          var num2=document.getElementById("num2").value;
+          var num=parseInt(num1)+parseInt(num2);
+          document.getElementById("message").innerHTML="Hello your result is "+num;
+      }
+  </script>
+
+</head>
+<body>
+    <header style="height: 35px;background-color: aquamarine;">
+    </header>
+    <div class="container">
+    <img src="img/apple.jpg" style="height: 100px;">
+    <img src="img/apple.jpg" style="height: 100px;">
+    <img src="img/apple.jpg" style="height: 100px;">
+    <hr/>
+    <h4>Add Two Numbers</h4>
+    <img src="img/math.png">
+    <form name="factForm" id="factForm">
+         <label><strong>Enter Num1</strong> </label> 
+         <input type="number" name="num1" id="num1" class="form-control" style="width: 50%;">
+         <label><strong>Enter Num2</strong> </label> 
+         <input type="number" name="num2" id="num2" class="form-control" style="width: 50%;">
+          <br/>
+         <button type="button" class="btn btn-primary" onclick="compute();">Add Number</button>
+         <button type="reset" class="btn btn-info" onclick="clearData();">Clear</button>
+         <button type="button" class="btn btn-danger">Show History</button>
+    </form>
+    <hr/>
+    <span style="font-size: 18px;color: darkviolet;" id="message">....</span>
+
+    <p>Math History:</p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>SNO</th>
+        <th>NUM1</th>
+        <th>NUM2</th>
+        <th>Result</th>
+        <th>Date/Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>21</td>
+        <td>23</td>
+        <td>44</td>
+        <td>NA</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>21</td>
+        <td>23</td>
+        <td>44</td>
+        <td>NA</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>
+
+</body>
+</html>
+
+
